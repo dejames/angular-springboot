@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @EnableAutoConfiguration
-@ComponentScan
+@ComponentScan(basePackages = "com.lets")
 public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);

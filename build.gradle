@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'spring-boot'
 apply plugin: 'idea'
+apply plugin: 'checkstyle'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -26,4 +27,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.slf4j:slf4j-api:1.7.18'
     testCompile 'junit:junit:4.12'
+}
+
+checkstyle {
+    toolVersion = "6.16.1"
 }
