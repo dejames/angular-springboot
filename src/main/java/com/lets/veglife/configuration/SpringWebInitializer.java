@@ -1,4 +1,4 @@
-package com.lets.configuration;
+package com.lets.veglife.configuration;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
