@@ -15,8 +15,7 @@ public class EchoController {
     @RequestMapping(value = "/echo", method = RequestMethod.GET)
     public String echo() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Active")
-                .append("<br /><br /><b>Server Info :</b>")
+        sb.append("<br /><br /><b>Server Info :</b>")
                 .append("<br /> Available processors=")
                 .append(Runtime.getRuntime().availableProcessors())
                 .append("<br /> CPU=")
