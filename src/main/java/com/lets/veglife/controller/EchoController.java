@@ -1,11 +1,15 @@
 package com.lets.veglife.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class EchoController {
+
+    private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     /**
      * gets all the properties of the application
@@ -14,6 +18,7 @@ public class EchoController {
      */
     @RequestMapping(value = "/echo", method = RequestMethod.GET)
     public String echo() {
+        logger.info("echoing the system settings");
         StringBuilder sb = new StringBuilder();
         sb.append("<b>Server Info :</b>")
                 .append("<br /> Available processors=")
