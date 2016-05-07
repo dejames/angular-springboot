@@ -1,3 +1,4 @@
 angular-springboot.*
 .gradle/
 build/
+logs/
